@@ -1,1 +1,3 @@
-console.log("testing again")
+import {loadHome} from './home'
+
+loadHome();
