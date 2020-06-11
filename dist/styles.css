@@ -1,0 +1,59 @@
+body{
+  margin: 0;
+}
+
+#promo{
+  background-image: url(https://travel.home.sndimg.com/content/dam/images/travel/fullrights/2019/1/20/0/CI_3milkshakes_Marcels_JeremiahCowan.jpg.rend.hgtvcom.616.822.suffix/1548089795535.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  width:100%;
+  height: 80vh;
+  text-align: center;
+}
+.header {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+
+#about {
+  background-color: #F1F1F1;
+  text-align: center;
+  padding: 20px;
+}
+/* The navbar container */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+  
+  /* Navbar links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+  /* Links - change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
+
+#headline{
+  margin:auto;
+  color:white;
+  font-size: 25px;
+  font-family: monospace;
+  line-height: 70vh;
+}
