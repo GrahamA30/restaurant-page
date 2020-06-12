@@ -1,6 +1,4 @@
-function loadHome (){
-    const content = document.querySelector('#content');
-    
+function head(){
     const header = document.createElement('div');
     header.className = "header";
 
@@ -9,8 +7,11 @@ function loadHome (){
     store.innerText = storeName;
     
     header.appendChild(store);
-    content.appendChild(header);
 
+    return header;
+}
+
+function navbar(){
     const nav = document.createElement('div');
     nav.className = "topnav";
 
@@ -29,8 +30,9 @@ function loadHome (){
     menu.innerText = "menu";
     nav.appendChild(menu);
 
-    content.appendChild(nav);
-
+    return nav;
+}
+function promoDiv(){
     const promo = document.createElement('div');
     promo.id = "promo";
 
@@ -40,8 +42,10 @@ function loadHome (){
     headline.innerText = headlineText;
 
     promo.appendChild(headline);
-    content.appendChild(promo);
 
+    return promo;
+}
+function aboutDiv(){
     const about = document.createElement('div');
     about.id = "about";
 
@@ -50,8 +54,10 @@ function loadHome (){
     p.innerText = aboutText;
     
     about.appendChild(p);
-    content.appendChild(about);
 
+    return about;
+}
+function foot(){
     const footer = document.createElement('div');
     footer.className = "footer";
 
@@ -67,7 +73,20 @@ function loadHome (){
     link3.innerText = "fwefwefw"
     footer.appendChild(link3);
 
-    content.appendChild(footer);
+    return footer
+}
+function loadHome (){
+    const content = document.querySelector('#content');
+    
+    content.appendChild(head());
+
+    content.appendChild(navbar());
+
+    content.appendChild(promoDiv());
+
+    content.appendChild(aboutDiv());
+
+    content.appendChild(foot());
 
 }
 
