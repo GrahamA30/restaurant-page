@@ -50,6 +50,31 @@ body{
   text-align: center;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left; 
+  width: 100%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #headline{
   margin:auto;
   color:white;
@@ -57,7 +82,11 @@ body{
   font-family: monospace;
   line-height: 70vh;
 }
-
+form {
+  margin:auto;
+  width: fit-content;
+  height: fit-content;
+}
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
   width: 100%; /* Full width */
